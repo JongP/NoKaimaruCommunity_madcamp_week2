@@ -16,7 +16,7 @@
 서버는 node js에서 mongoDB를 사용하였다.
 
 #### MainActivity
-<img src="source/splashlogo.png" width="200">
+<img src="https://user-images.githubusercontent.com/61833862/125467446-d961f6e8-30cd-4990-8697-421479d746b1.jpg" width="200" height="400">
 
 > SplashTheme 를 만든 후 MainActivity의 theme로 설정해 앱 실행 시 로고가 뜬다.
 >
@@ -27,7 +27,7 @@
 
 #### TAB1 - RESTAURANT
 
-<img src="source/tab1_1.gif" width="200">&nbsp;&nbsp;&nbsp;    <img src="source/tab1_2.gif" width="200">
+<img src="https://user-images.githubusercontent.com/61833862/125465488-4b966320-fd5a-490c-888e-bd1c96222c4e.jpg" width="200"> &nbsp;&nbsp;&nbsp;
 
 > + Design
 > 
@@ -54,6 +54,8 @@
 
 #### RestaurantActivity
 
+<img src="https://user-images.githubusercontent.com/61833862/125465855-fa34794e-e3fc-416a-b2e1-598cf5b4e8eb.jpg" width="200">
+
 > + Design
 >
 > 식당의 커버 이미지가 위쪽에 뜨고 아래쪽엔 식당에 대한 여러가지 정보와 버튼들이 있다.
@@ -74,7 +76,10 @@
 >
 > network thread와 retrofit을 조합해서 사용하는데 실패해서, Restrict Mode를 사용하여 main thread에서 사진을 불러온다.
 
+
 #### SeeReviewActivity
+
+<img src="https://user-images.githubusercontent.com/61833862/125466029-4f14872c-1159-42d3-a795-cbd5af6642ed.jpg" width="200">
 
 > + Design
 > 
@@ -90,6 +95,8 @@
 
 #### WritePostActivity
 
+<img src="https://user-images.githubusercontent.com/61833862/125466138-1249529d-33e7-4c2c-8f49-2d28721bfbc9.jpg" width="200"> &nbsp;&nbsp;&nbsp; <img src="https://user-images.githubusercontent.com/61833862/125466255-f71100e0-4455-4d51-92d9-99927e22b65b.jpg" width="200">
+
 > + Design
 > 이미지와 리뷰 제목, 리뷰 본문, 별점을 업로드 할 수 있다.
 > 
@@ -102,7 +109,7 @@
 
 #### TAB2 - REVIEWS
 
-<img src="source/tab2_1.gif" width="200">&nbsp;&nbsp;&nbsp;    <img src="source/tab2_2.gif" width="200">
+<img src="https://user-images.githubusercontent.com/61833862/125466854-9e3f5c04-4208-4e05-9d74-4516ea6831f7.jpg" width="200">
 
 > + Design
 > 모든 식당 리뷰를 한 번에 모아서 볼 수 있는 탭이다. 
@@ -125,6 +132,8 @@
 
 #### DatailPostActivity
 
+<img src="https://user-images.githubusercontent.com/61833862/125466496-a86094d5-9c9d-43df-99e8-ac03480cc6d8.jpg" width="200">  &nbsp;&nbsp;&nbsp; <img src="https://user-images.githubusercontent.com/61833862/125466731-936a77bd-0580-47ca-89f4-58bfb122cb20.jpg" width="200"> &nbsp;&nbsp;&nbsp; <img src="https://user-images.githubusercontent.com/61833862/125466585-85ae834b-7aa8-417d-b170-a794b436bec1.jpg" width="200">
+
 > + Design
 >
 > 해당 리뷰가 남겨진 식당과 리뷰에 첨부된 사진, 제목, 본문, 별점이 보인다.
@@ -138,7 +147,8 @@
 
 #### TAB3 - MY PAGE
 
-<img src="source/tab3_1.gif" width="200">&nbsp;&nbsp;&nbsp;   <img src="source/tab3_2.gif" width="200">
+<img src="https://user-images.githubusercontent.com/61833862/125464538-f958f4ee-5495-49d0-9e82-b4ff205abfba.jpg"  width="200" height="400">
+
 
 + Design
 > 현재 로그인 된 유저의 이름, 이메일, 프로필 사진이 뜬다. 
