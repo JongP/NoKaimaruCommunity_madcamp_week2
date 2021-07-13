@@ -12,12 +12,17 @@
 
 ### 프로젝트 상세 설명
 
+클라이언트는 안드로이드 스튜이도에서 자바를 사용하였다.
+서버는 node js에서 mongoDB를 사용하였다.
+
 #### MainActivity
 <img src="source/splashlogo.png" width="200">
 
 > SplashTheme 를 만든 후 MainActivity의 theme로 설정해 앱 실행 시 로고가 뜬다.
 >
 > TabLayout을 이용하고, ViewPager의 각 페이지와 연동했다.
+> 
+> MainActivity 이전에 LoginAcitivty를 통해 구글 SDK로 로그인 정보를 받고, 서버에 UserModel에 user 정보를 등록한다. 
 
 
 #### TAB1 - RESTAURANT
@@ -43,6 +48,9 @@
 > Default 화면은 Header가 전부 펼쳐져 보인다.
 > 
 > 식당 이름을 클릭하면 식당의 고유 ID를 intent를 통해 넘겨주고 RestaurantActivity를 실행한다.
+> 
+> favorite을 클릭하면 user ID로 UserModel에서 유저를 쿼리하고, user 안의 favorites이라는 배열에 중복 체크 후 추가한다.
+
 
 #### RestaurantActivity
 
@@ -63,6 +71,8 @@
 > + Implementation
 > 
 > retrofit을 이용해서 DB로부터 식당의 커버 사진을 비롯한 정보들을 불러온다. 
+>
+> network thread와 retrofit을 조합해서 사용하는데 실패해서, Restrict Mode를 사용하여 main thread에서 사진을 불러온다.
 
 #### SeeReviewActivity
 
@@ -75,6 +85,8 @@
 > + Implementation
 > 
 > intent를 통해 넘겨받은 리뷰 포스트의 고유 ID를 이용해서 리뷰들을 모아온다.
+> 
+> mongoDB에서 레스토랑의 id로 PostModel을 쿼리하여 보내준다.
 
 #### WritePostActivity
 
@@ -85,7 +97,7 @@
 
 > + Implementation
 > 
-> 
+> DB의 PostModel에 새로운 다큐먼트를 만들고 저장한다. Multipart를 이용해 사진을 전송하고 서버에 byte stream으로 jpeg파일을 저장한다.
 
 
 #### TAB2 - REVIEWS
@@ -121,7 +133,7 @@
 
 > + Implementation
 > 
-> 
+> DB에서 사진의 byte stream을 넘겨준다. 안드로이드에서 byte stream을 bitmap으로 decode해서 image view에서 보여준다.
 
 
 #### TAB3 - MY PAGE
@@ -141,6 +153,8 @@
 > 유저 ID를 이용해 retrofit을 통해 DB로부터 로그인한 유저가 favorite 표시한 식당 리스트를 불러온다.
 >
 > intent를 이용해 식당 이름을 클릭했을 때 RestaurantActivity로 넘어간다. 
+>
+> DB에서 UserModel의 favorites 배열에서 저장 되어있는, restID를 populate이라는 메소드로 RestModel로 복원해낸다. 이후 RestModel의 JSON Array를 클라인트로 전송한다.
 
 
 
