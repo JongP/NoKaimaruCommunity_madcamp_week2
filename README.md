@@ -4,7 +4,8 @@
 > 어은동 맛집들에 대한 정보와 리뷰를 공유할 수 있는 커뮤니티 앱.
 
 ### 팀원 소개
-> 김현수, 박종회  
+>   김현수 - Tab1(RESTAURANT), Restaurant Activity, PostActivity, Login, Overall Design, UI   
+>   박종회 - Server(nodejs+mongoDB) , SeeReview Activity, Tab2(Reviews), DetailPostActivity, Tab3(MyPage), Server Logic in FrontEnd     
 
 ### 다운로드 링크
 > [Click Here](https://drive.google.com/file/d/1U405AnZg8mo9yUkzyT1M2L6q17bdciW0/view?usp=sharing)
